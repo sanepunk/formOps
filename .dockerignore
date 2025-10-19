@@ -12,4 +12,6 @@ Data/form_submissions.json
 .gitignore
 .dockerignore
 README.md
+*.txt
+*.json
 .DS_Store
