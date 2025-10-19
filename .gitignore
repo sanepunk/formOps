@@ -6,5 +6,6 @@ __pycache__/
 .Python
 .env
 venv/
-*.txt
-*.json
+Data/form_submissions.json
+db.txt
+.DS_Store

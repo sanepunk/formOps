@@ -6,12 +6,9 @@ __pycache__/
 .env
 venv/
 .form/
-*.json
 Data/form_submissions.json
+db.txt
 .git/
 .gitignore
 .dockerignore
-README.md
-*.txt
-*.json
 .DS_Store
