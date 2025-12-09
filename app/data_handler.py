@@ -1,6 +1,14 @@
 import os
 import json
 from datetime import datetime
+from pydantic import BaseModel
+
+class DataEntry(BaseModel):
+    name: str
+    email: str
+    phone: str
+    location: str
+    submission_time: str
 
 def save_form_data(name, email, phone, location):
     """Save form data to a JSON file with timestamp as identifier"""
@@ -58,6 +66,7 @@ def get_all_submissions():
                 entries.sort(key=lambda x: x["submission_time"], reverse=True)
                 return entries
         except json.JSONDecodeError:
+            print("Error: JSON file is corrupted.")
             return []
     else:
         return []
